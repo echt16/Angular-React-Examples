@@ -1,0 +1,11 @@
+<!-- <app-pipes></app-pipes> -->
+<h1>List</h1>
+<div *ngIf="items.length != 0">
+    <div *ngFor="let item of items">
+        {{item.id}}, {{item.date|date:'yyyy-MM-dd'}}
+        <div [ngSwitch]="item.id">
+            <p [class.bg]="true" *ngSwitchCase="1">item 1</p>
+            <p [class.b]="true" *ngSwitchDefault>default</p>
+        </div>
+    </div>
+</div>

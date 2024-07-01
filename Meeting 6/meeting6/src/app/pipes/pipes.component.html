@@ -1,0 +1,21 @@
+<div>uppercase: {{str|uppercase}}</div>
+<div>lowercase: {{str | lowercase}}</div>
+<div>number: {{num | number}}</div>
+<div>percent: {{num | percent:'4.8-10'}}</div>
+<div>currency: {{num | currency}}</div>
+<hr>
+<div>0-2: {{str|slice:0:2}}</div>
+<div>-1: {{str|slice:-1}}</div>
+<hr>
+<div>{{num|number:'5.0-1'}}</div>
+<hr>
+<div>{{money|currency:'CAD':'symbol':'5.8-10'|slice:-20}}</div>
+<hr>
+<div>From object: {{ dateObject | date }}</div>
+<div>From string: {{ dateString | date }}</div>
+<div>From number: {{ dateNumber | date }}</div>
+<div>ShortDate: {{ dateObject | date:"shortDate" }}</div>
+<div>MediumDate: {{ dateObject | date:"mediumDate" }}</div>
+<div>LongDate: {{ dateObject | date:"longDate" }}</div>
+<div>Custom: {{ dateObject | date:"dd/MM-yyyy" }}</div>
+<div>Timezone UTC: {{ dateObject | date:"dd-MM-yyyy": "UTC"}}</div>
